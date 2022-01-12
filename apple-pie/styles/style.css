@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+}
+
+.apple-pie {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 30% 40%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.apple-pie-title {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  font-size: 55px;
+  color: white;
+  font-family: Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-weight: 300;
+}
+
+.intro {
+  width: 700px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding: 40px 60px;
+  font-family: Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-weight: 225;
+  font-size: 18px;
+}
+
+.recipe-info {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-top: 0;
+}
+
+.separator {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: darkgray;
+}
+
+.section {
+  font-family: Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+.ingredients {
+  list-style-type: none;
+  font-weight: 225;
+}
+
+ul.ingredients > li:before {
+  content: "- ";
+}
+
+.cooking-info {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.directions {
+  font-weight: 225;
+  padding-bottom: 30px;
+}
+
+ol {
+  counter-reset: list;
+}
+
+ol > li {
+  list-style: none;
+}
+
+ol > li:before {
+  content: counter(list) ") ";
+  counter-increment: list;
+}
